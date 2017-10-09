@@ -2,7 +2,7 @@
   "name": "run-command-promise",
   "version": "0.2.0",
   "description": "Wrap spawn around a promise and hook into the callbacks",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "eslint src && jest --coverage && flowcheck check --skip-check",
     "start": "babel src --watch --out-dir dist --ignore *.test.js",
