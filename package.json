@@ -1,6 +1,6 @@
 {
   "name": "run-command-promise",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Wrap spawn around a promise and hook into the callbacks",
   "main": "dist/index.js",
   "scripts": {
