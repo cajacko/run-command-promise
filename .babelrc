@@ -6,7 +6,7 @@
       {
         "root": ["./src"],
         "alias": {
-          "root": "./"
+          "src": "./src"
         },
         "extensions": [".js", ".jsx"]
       }

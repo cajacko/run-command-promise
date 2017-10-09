@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint src && jest --coverage && flowcheck check --skip-check",
-    "jest:watch": "node node_modules/jest/bin/jest.js --watch --coverage",
-    "start": "babel src --watch --out-dir dist "
+    "start": "babel src --watch --out-dir dist --ignore *.test.js"
   },
   "repository": {
     "type": "git",
