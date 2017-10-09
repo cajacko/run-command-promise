@@ -11,7 +11,7 @@ import { spawn } from 'child_process';
  * @return {Void}              No return value
  */
 export function log(out, dataCallback) {
-  out.on('data', (data) => {
+  out('data', (data) => {
     console.log(`${data}`);
     if (dataCallback) dataCallback(`${data}`);
   });
@@ -32,8 +32,8 @@ export default function (command, dataCallback) {
     const commands = command.split(' ');
     const ls = spawn(commands.splice(0, 1)[0], commands);
 
-    log(ls.stdout, dataCallback);
-    log(ls.stderr, dataCallback);
+    log(ls.stdout.on, dataCallback);
+    log(ls.stderr.on, dataCallback);
 
     ls.on('close', (code) => {
       if (code) {
