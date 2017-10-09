@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "eslint src && jest --coverage && flowcheck check --skip-check",
-    "start": "babel src --watch --out-dir dist --ignore *.test.js"
+    "start": "babel src --watch --out-dir dist --ignore *.test.js",
+    "publish": "babel src --out-dir dist --ignore *.test.js && npm publish"
   },
   "repository": {
     "type": "git",
